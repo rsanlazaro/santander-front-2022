@@ -1,0 +1,45 @@
+body {
+    background-color: #fffbf7;
+    margin: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+h1 {
+    color: #025157;
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem; 
+}
+
+p {
+    padding: 0 5rem;
+    color: #8b8b8bcc;
+    font-family: verdana;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+button,
+input {
+    border: black solid 1px;
+    border-radius: 4px;
+}
+
+input {
+    padding: 1rem 1.5rem;
+}
+
+button {
+    padding: 1rem 2.5rem;
+    color: #fff;
+    background-color: #025157;
+    font-family: verdana;
+}
+
+img {
+    width: 80%;
+}
