@@ -80,7 +80,7 @@ form > button {
   margin-left: -10px;
 }
 
-.img-main {
+.main > img {
   display: block;
   max-width: 30rem;
   margin: 1rem auto;
