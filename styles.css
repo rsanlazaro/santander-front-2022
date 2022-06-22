@@ -1,3 +1,10 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +13,21 @@
 
 body {
   background-color: #fffbf7;
-  text-align: center;
-  font-size: 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fffbf7;
+  z-index: 2;
 }
 
 a {
@@ -17,49 +37,62 @@ a {
 h1 {
   color: #025157;
   font-family: "Alegreya", serif;
+  font-size: 60px;
+  margin-bottom: 24px;
+  font-weight: 800;
+}
+
+h3 {
+  color: #025157;
+  font-family: "Alegreya", serif;
   font-size: 3rem;
-  margin-bottom: 1rem;
-  display: block;
   font-weight: 800;
 }
 
 h4 {
   color: #46484c;
   font-family: "Slabo 27px", serif;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: normal;
 }
 
 p {
   color: #8b8b8bcc;
-  margin-top: 0.2rem;
+  margin-top: 0.25rem;
   font-family: Verdana;
 }
 
 .header > * {
-  display: inline-block;
-  font-size: 16px;
+  /* display: inline-block; */
+  /* font-size: 5rem; */
   vertical-align: middle;
   height: 100%;
-  line-height: 45px;
+  /* line-height: 5rem; */
 }
 
 .header {
-  margin: 40px 20px 0;
-  font-size: 0;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  /* margin: 40px 20px 0; */
+  /* font-size: 0; */
   font-family: sans-serif;
-  line-height: 45px;
+  /* line-height: 4.5rem; */
 }
 
 .logo > img {
-  width: 15%;
+  /* width: 15%; */
+  width: 100%;
 }
 
 form {
   display: flex;
   justify-content: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
 }
 
 input {
@@ -70,43 +103,55 @@ input {
   border-radius: 0.5rem 0 0 0.5rem;
 }
 
-form > button {
-  padding: 0.8rem 1rem;
-  color: #fff;
-  background-color: #025157;
-  border: none;
-  font-family: verdana;
-  border-radius: 0 0.5rem 0.5rem 0;
-  margin-left: -10px;
-}
-
-.main > img {
+/* .main > img {
   display: block;
   max-width: 30rem;
   margin: 1rem auto;
+} */
+
+.banner > img {
+  width: 20%;
+}
+
+.intro > img {
+  width: 50%;
 }
 
 .logo {
-  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  /* margin-right: 1rem; */
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
 }
 
 .navbar {
+  display: flex;
+  justify-content: center;
   color: #025157;
-  width: 70%;
   text-align: center;
   font-weight: 500;
 }
 
 li {
   list-style-type: none;
-  margin: auto 25px;
+  margin: auto 10px;
 }
 
 .actions {
-  width: 15%;
+  /* width: 15%; */
+  display: flex;
+  align-items: center;
   text-align: right;
   font-size: 14px;
   font-weight: 600;
+  height: 55px;
 }
 
 .actions > a {
@@ -117,11 +162,26 @@ li {
   margin: auto 10px;
 }
 
+form > button,
 .actions > button {
   color: white;
   background-color: #67b54b;
-  padding: 12px 14px;
+  padding: 18px 14px;
   border: 0px;
+}
+
+form > button {
+  background-color: #025157;
+  color: #fff;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 18px 20px;
+  margin-left: -10px;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.actions > button {
   border-radius: 5px;
 }
 
@@ -130,6 +190,167 @@ li {
 }
 
 .main {
-  margin-top: 140px;
+  margin-top: 285px;
   text-align: center;
 }
+
+.publish > p {
+  color: #343434;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.publish div > p {
+  margin: 1rem;
+}
+
+.publish h3 {
+  font-family: "Alegreya", serif;
+  font-size: 40px;
+  line-height: 48px;
+  color: #025157;
+}
+
+.promo {
+  display: flex;
+  width: 70%;
+  margin: 100px auto;
+  align-items: center;
+}
+
+.explanatory-video {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  width: 50%;
+}
+
+.explanatory-video > img {
+  width: 5rem;
+  margin: 1rem auto;
+}
+
+/* Succes stories */
+
+.success-stories {
+  background-color: #a1d683;
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.success-stories .overview {
+  flex: 2;
+  padding-right: 100px;
+}
+
+.success-stories .stories-carousel {
+  flex: 1;
+}
+
+.success-stories .overview h2 {
+  font-family: "Alegreya", serif;
+  font-size: 51px;
+  line-height: 61px;
+  color: #025157;
+  font-weight: 800;
+}
+
+.success-stories .overview p {
+  color: #343434;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.success-stories button {
+  font-size: 14px;
+  padding: 12px 12px 6px 12px;
+  border-radius: 8px;
+  height: 45px;
+  font-weight: 600;
+  margin-left: 0;
+  background-color: #025157;
+  color: #fff;
+  border: none;
+}
+
+.success-stories .overview img {
+  width: 500px;
+  max-width: 100%;
+}
+
+.card {
+  max-width: 370px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 10px;
+}
+
+.success-stories .card img {
+  width: 100%;
+  max-height: 16vw;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.success-stories .stories-carousel .card .card-body h4 {
+  color: #025157;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.success-stories .stories-carousel .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.success-stories .stories-carousel .card {
+  position: relative;
+}
+
+.success-stories .stories-carousel .company {
+  position: absolute;
+  top: 190px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  background-color: #f9da73;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-stories .stories-carousel .card-body {
+  margin: 40px 20px;
+}
+
+.success-stories .stories-carousel .results {
+  display: flex;
+}
+
+.success-stories .stories-carousel .card-footer {
+  margin: auto 20px 40px 20px;
+}
+
+.success-stories .stories-carousel button {
+  width: 100%;
+}
+
+
