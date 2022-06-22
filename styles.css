@@ -95,6 +95,17 @@ form {
   font-size: 2rem;
 }
 
+.publish .publish-text p,
+.publish .publish-text .signup-form {
+  margin-left: 0;
+}
+
+.publish .publish-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 input {
   border: 1px solid #b6b6b6;
   padding: 6px 20px;
@@ -231,6 +242,82 @@ li {
   margin: 1rem auto;
 }
 
+/* Features */
+
+.features {
+  display: grid;
+  grid-template: repeat(2,330px) / repeat(2,1fr);
+  background-color: #025157;
+  color: #fff;
+  padding: 100px;
+  gap: 30px;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 0 30px 30px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  /* gap: 1rem; */
+}
+
+.feature-card h3 {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+  font-weight: 100;
+  font-size: 24px;
+}
+
+.feature-card .feature-content > * {
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #7e7e7e;
+  font-weight: 400;
+}
+
+.feature-card a {
+  font-size: 16px;
+  color: #67b54b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.feature-content {
+  overflow: hidden;
+}
+
+.feature-content figure {
+  display: flex;
+  justify-content: center;
+  height: 40%;
+}
+
+.feature-content img {
+  margin-bottom: 0.5rem;
+}
+
+.feature-image figure {
+  overflow: hidden;
+  height: 100%;
+}
+
+.feature-image img {
+  height: 100%;
+  position: relative;
+  /* height: 300px; */
+  /* position: relative; */
+  /* right: -30%; */
+  transform: translateX(19.5%);
+  /* contain: cover; */
+  /* top: 10px; 
+  height: 260px; */
+  /* height: calc(330px - ()); */
+}
+
 /* Succes stories */
 
 .success-stories {
@@ -291,7 +378,6 @@ li {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 10px;
@@ -299,9 +385,10 @@ li {
 
 .success-stories .card img {
   width: 100%;
-  max-height: 16vw;
+  /* max-height: 16vw; */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  position: relative;
 }
 
 .success-stories .stories-carousel .card .card-body h4 {
@@ -319,22 +406,25 @@ li {
   margin-bottom: 20px;
 }
 
-.success-stories .stories-carousel .card {
+.success-stories .stories-carousel .company {
   position: relative;
 }
 
-.success-stories .stories-carousel .company {
-  position: absolute;
-  top: 190px;
-  right: 20px;
-  width: 100px;
-  height: 100px;
-  padding: 10px;
+.success-stories .stories-carousel .company figure {
+  width: 7rem;
+  height: 7rem;
   background-color: #f9da73;
   border-radius: 50%;
+  position: absolute;
+  top: -4rem;
+  right: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.success-stories .stories-carousel .company img {
+  width: 70%;
 }
 
 .success-stories .stories-carousel .card-body {
