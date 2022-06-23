@@ -246,7 +246,7 @@ li {
 
 .features {
   display: grid;
-  grid-template: repeat(2,330px) / repeat(2,1fr);
+  grid-template: repeat(2, 330px) / repeat(2, 1fr);
   background-color: #025157;
   color: #fff;
   padding: 100px;
@@ -259,14 +259,13 @@ li {
   padding: 30px 0 30px 30px;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  /* gap: 1rem; */
 }
 
 .feature-card h3 {
   font-family: "Open Sans", sans-serif;
   color: #000;
   font-weight: 100;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .feature-card .feature-content > * {
@@ -274,13 +273,13 @@ li {
 }
 
 .feature-card p {
-  font-size: 16px;
+  font-size: 14px;
   color: #7e7e7e;
   font-weight: 400;
 }
 
 .feature-card a {
-  font-size: 16px;
+  font-size: 14px;
   color: #67b54b;
   font-weight: 600;
   text-decoration: none;
@@ -293,7 +292,7 @@ li {
 .feature-content figure {
   display: flex;
   justify-content: center;
-  height: 40%;
+  height: 30%;
 }
 
 .feature-content img {
@@ -308,14 +307,7 @@ li {
 .feature-image img {
   height: 100%;
   position: relative;
-  /* height: 300px; */
-  /* position: relative; */
-  /* right: -30%; */
   transform: translateX(19.5%);
-  /* contain: cover; */
-  /* top: 10px; 
-  height: 260px; */
-  /* height: calc(330px - ()); */
 }
 
 /* Succes stories */
@@ -354,7 +346,7 @@ li {
 
 .success-stories button {
   font-size: 14px;
-  padding: 12px 12px 6px 12px;
+  padding: 12px 16px;
   border-radius: 8px;
   height: 45px;
   font-weight: 600;
@@ -443,4 +435,97 @@ li {
   width: 100%;
 }
 
+/* How does Matcha work? */
 
+.how-does-it-work {
+  background-color: #fffbf7;
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.how-does-it-work .title {
+  color: #025157;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 400;
+  font-family: "Alegreya", serif;
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+
+.how-does-it-work .description {
+  max-width: 60%;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 1.5;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.how-does-it-work button {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 25px;
+  height: 45px;
+  margin-left: 0;
+  border-radius: 8px;
+  margin-top: 6px;
+  background-color: #025157;
+  color: #fff;
+  border: none;
+}
+
+.how-does-it-work a {
+  color: #67b54b;
+  text-decoration: none;
+}
+
+.steps {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.steps .card-step-body {
+  padding: 25px;
+}
+
+.steps .class-step {
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.steps h3 {
+  font-size: 30px;
+  line-height: 36px;
+  font-family: "Alegreya", serif;
+  color: #025157;
+  font-weight: 800;
+  text-align: center;
+}
+
+.steps p {
+  font-size: 12px;
+}
+
+.steps a {
+  font-size: 14px;
+}
+
+.card-step-image {
+  width: 100%;
+}
+
+.card-step-image figure {
+  width: 100%;
+}
+
+.card-step-image figure img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
