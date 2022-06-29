@@ -21,17 +21,13 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-.fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+.navbar {
   background-color: #fffbf7;
-  z-index: 2;
 }
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 h1 {
@@ -59,7 +55,7 @@ h4 {
 
 p {
   color: #8b8b8bcc;
-  margin-top: 0.25rem;
+  /* margin-top: 0.25rem; */
   font-family: Verdana;
 }
 
@@ -90,14 +86,23 @@ p {
 
 form {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   margin-bottom: 2rem;
   font-size: 2rem;
 }
 
-.publish .publish-text p,
-.publish .publish-text .signup-form {
-  margin-left: 0;
+.main form {
+  justify-content: center;
+}
+
+.publish > form {
+  /* justify-content: space-between; */
+  flex-direction: column;
+}
+
+.publish > form > div {
+  display: flex;
+  /* flex-direction: column; */
 }
 
 .publish .publish-text {
@@ -107,18 +112,20 @@ form {
 }
 
 input {
+  font-size: 15px;
   border: 1px solid #b6b6b6;
-  padding: 6px 20px;
+  padding: 10px;
   width: 60%;
   max-width: 250px;
   border-radius: 0.5rem 0 0 0.5rem;
+  overflow: hidden;
 }
 
-/* .main > img {
-  display: block;
-  max-width: 30rem;
-  margin: 1rem auto;
-} */
+button {
+  font-size: 15px;
+  overflow: visible;
+  white-space: nowrap;
+}
 
 .banner > img {
   width: 20%;
@@ -142,7 +149,7 @@ input {
   white-space: nowrap;
 }
 
-.navbar {
+.navbar-menu {
   display: flex;
   justify-content: center;
   color: #025157;
@@ -173,7 +180,6 @@ li {
   margin: auto 10px;
 }
 
-form > button,
 .actions > button {
   color: white;
   background-color: #67b54b;
@@ -182,12 +188,25 @@ form > button,
 }
 
 form > button {
+  /* border: 1px solid #b6b6b6; */
   background-color: #025157;
   color: #fff;
   border: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  padding: 18px 20px;
+  padding: 10px;
+  margin-left: -10px;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+form > div > button {
+  border: 1px solid #025157;
+  background-color: #025157;
+  color: #fff;
+  /* border: none; */
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 10px;
   margin-left: -10px;
   border-radius: 0 0.5rem 0.5rem 0;
 }
@@ -205,22 +224,28 @@ li {
   text-align: center;
 }
 
-.publish > p {
+.publish > form > p {
   color: #343434;
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  /* margin: 0; */
+  display: flex;
+  align-items: center;
 }
-
+/* 
 .publish div > p {
   margin: 1rem;
-}
+} */
 
 .publish h3 {
   font-family: "Alegreya", serif;
   font-size: 40px;
   line-height: 48px;
   color: #025157;
+}
+
+.publish form > * {
+  margin: 10px 0;
 }
 
 .promo {
@@ -234,7 +259,7 @@ li {
   display: flex;
   flex-direction: column;
   margin-right: 50px;
-  width: 50%;
+  width: 100%;
 }
 
 .explanatory-video > img {
@@ -528,4 +553,103 @@ li {
   width: 100%;
   height: 150px;
   object-fit: cover;
+}
+
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+  .navbar-menu,
+  .actions {
+    display: none;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 15px;
+  }
+
+  .main {
+    margin: 100px 50px 0 50px;
+  }
+
+  .banner > img {
+    width: 100%;
+  }
+
+  .publish > form {
+    flex-direction: column;
+  }
+
+  .publish > form > div {
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .publish > form > div > input {
+    width: 65%;
+  }
+
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .explanatory-video {
+    margin-right: 0;
+  }
+
+  .explanatory-video > video {
+    width: 100%;
+  }
+
+  .publish {
+    margin-top: 10px;
+  }
+
+  .publish > h3 {
+    font-size: 25px;
+    line-height: 1.2;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .features .feature-content {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .features .feature-card {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+
+  .feature-image {
+    display: none;
+  }
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {
 }
