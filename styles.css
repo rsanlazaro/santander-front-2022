@@ -386,10 +386,14 @@ li {
 
 .success-stories .card img {
   width: 100%;
-  /* max-height: 16vw; */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   position: relative;
+}
+
+.success-stories .card-media img {
+  height: 280px;
+  object-fit: cover;
 }
 
 .success-stories .stories-carousel .card .card-body h4 {
@@ -436,12 +440,31 @@ li {
   display: flex;
 }
 
+.success-stories .results img {
+  width: 15%;
+  object-fit: contain;
+  margin-right: 25px;
+}
+
+.success-stories .results p {
+  margin: 0;
+}
+
 .success-stories .stories-carousel .card-footer {
   margin: auto 20px 40px 20px;
+  padding: 0;
 }
 
 .success-stories .stories-carousel button {
   width: 100%;
+}
+
+.carousel-indicators {
+  position: unset;
+  right: unset;
+  bottom: unset;
+  left: unset;
+  margin-top: 5%;
 }
 
 /* How does Matcha work? */
@@ -570,12 +593,12 @@ li {
     margin: auto;
   }
 
-  .collapse {
-    /* display: block; */
+  .actions {
+    justify-content: center;
   }
 
-  .actions {
-    display: none;
+  .actions > button {
+    padding: 10px;
   }
 
   .logo {
@@ -584,6 +607,25 @@ li {
 
   h1 {
     font-size: 20px;
+  }
+
+  .success-stories .overview {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .success-stories .overview h2 {
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  .success-stories .overview p {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .success-stories .overview img {
+    margin: 30px auto;
   }
 
   .texto-promocional {
@@ -595,7 +637,7 @@ li {
   }
 
   .main {
-    margin: 25px 50px 0 50px;
+    margin: 100px 50px 0 50px;
   }
 
   .banner > img {
@@ -664,16 +706,26 @@ li {
   .feature-image {
     display: none;
   }
+
+  .success-stories {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /** dispositivos pequeños en vista landscape (horizontal) */
 @media (min-width: 576px) and (max-width: 767px) {
-  .actions {
-    display: none;
-  }
 
   .menu li {
     margin: auto;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+
+  .actions > button {
+    padding: 10px;
   }
 
   p {
@@ -682,6 +734,34 @@ li {
 
   h1 {
     font-size: 22px;
+  }
+
+  .success-stories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .success-stories .overview {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .success-stories .overview h2 {
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  .success-stories .overview p {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  .success-stories .overview img {
+    margin: 30px auto;
+  }
+
+  .texto-promocional {
+    margin-bottom: 2px;
   }
 
   .texto-promocional {
@@ -693,7 +773,7 @@ li {
   }
 
   .main {
-    margin: 50px 50px 0 50px;
+    margin: 100px 50px 0 50px;
   }
 
   .banner > img {
@@ -767,12 +847,17 @@ li {
 
 /** dispositivos medianos (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
-  .actions {
-    display: none;
-  }
 
   .menu li {
     margin: auto;
+  }
+
+  .actions {
+    justify-content: center;
+  }
+
+  .actions > button {
+    padding: 10px;
   }
 
   p {
@@ -861,6 +946,19 @@ li {
 
   .feature-image {
     display: none;
+  }
+
+  .success-stories {
+    padding: 10%;
+  }
+
+  .success-stories .overview {
+    flex: 1;
+    padding-right: 30px;
+  }
+
+  .success-stories .overview img {
+    margin: 30px auto;
   }
 }
 
@@ -971,6 +1069,19 @@ li {
   .feature-image {
     display: none;
   }
+
+  .success-stories {
+    padding: 10%;
+  }
+
+  .success-stories .overview {
+    flex: 1;
+    padding-right: 80px;
+  }
+
+  .success-stories .overview img {
+    margin: 30px auto;
+  }
 }
 
 /** dispositivos extra grandes (monitores grandes, tvs) */
@@ -981,5 +1092,9 @@ li {
 
   .main {
     margin-top: 150px;
+  }
+
+  .success-stories .overview img {
+    margin: 50px auto;
   }
 }

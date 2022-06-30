@@ -32,73 +32,42 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #fffbf7;">
       <div class="container-fluid">
-        <a href="\" class="navbar-brand logo">
-          <img
-            src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png"
-            alt="Matcha"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu">
-            <li class="nav-item menu-item">
-              <a class="nav-link active" aria-current="page" href="#">Pricing</a>
-            </li>
-            <li class="nav-item menu-item">
-              <a class="nav-link" href="#">Customers</a>
-            </li>
-            <li class="nav-item menu-item">
-              <a class="nav-link" href="#">Resources</a>
-            </li>
-            <li class="nav-item menu-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-          <div class="actions">
-            <a href="\login">Sign in</a>
-            <button>Start free trial</button>
+          <a class="navbar-brand logo" href="\">
+              <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" alt="Matcha" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu">
+                  <li class="nav-item menu-item">
+                      <a class="nav-link active" aria-current="page" href="\">Platform</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="pricing.html">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Customers</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Resources</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About us</a>
+                  </li>
+              </ul>
+
+              <div class="actions">
+                  <a href="#">Sign In</a>
+                  <button>Start Free Trial</button>
+              </div>
           </div>
-        </div>
       </div>
-    </nav>
-    <!-- <section class="fixed-header">
-      <header class="header">
-        <a href="\" class="logo">
-          <img
-            src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png"
-            alt="Matcha"
-          />
-        </a>
-        <nav class="navbar">
-          <ul class="menu">
-            <li class="menu-item">Platform</li>
-            <li class="menu-item">Pricing</li>
-            <li class="menu-item">Customers</li>
-            <li class="menu-item">Resources</li>
-            <li class="menu-item">About</li>
-          </ul>
-        </nav>
-        <div class="actions">
-          <a href="\login">Sign in</a>
-          <button>Start free trial</button>
-        </div>
-      </header>
-    </section> -->
+  </nav>
     <section class="main">
       <h1>Build your blog. Build your business.</h1>
       <h4>
@@ -284,41 +253,126 @@
         </figure>
       </article>
       <article class="stories-carousel">
-        <div class="card">
-          <div class="card-media">
-            <figure>
-              <img
-                src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
-                alt="Everly worker"
-              />
-            </figure>
-          </div>
-          <div class="company">
-            <figure>
-              <img
-                src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png"
-                alt="Everly"
-              />
-            </figure>
-          </div>
-          <div class="card-body">
-            <h4>Everly</h4>
-            <h3>
-              Early-Stage CPG Brand Increases Load Conversion 20x, Ecommerce
-              Revenue 20%
-            </h3>
-            <div class="results">
-              <img
-                src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_cart.png"
-                alt="Cart icon"
-              />
-              <p>22% of monthly revenue influenced by content</p>
+        <section class="card-container">
+          <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <div class="card-media">
+                    <figure>
+                      <img
+                        src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
+                        alt="Everly worker"
+                      />
+                    </figure>
+                  </div>
+                  <div class="company">
+                    <figure>
+                      <img
+                        src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png"
+                        alt="Everly"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-body">
+                    <h4>Everly</h4>
+                    <h3>
+                      Early-Stage CPG Brand Increases Load Conversion 20x,
+                      Ecommerce Revenue 20%
+                    </h3>
+                    <div class="results">
+                      <img
+                        src="https://cdn3.iconfinder.com/data/icons/glypho-free/64/cart-alt-512.png"
+                        alt="Cart icon"
+                      />
+                      <p>22% of monthly revenue influenced by content</p>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <button>See Case Study</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-media">
+                    <figure>
+                      <img
+                        src="https://getmatcha.com/wp-content/uploads/2019/08/0.jpg"
+                        alt="Everly worker"
+                      />
+                    </figure>
+                  </div>
+                  <div class="company">
+                    <figure>
+                      <img
+                        src="https://getmatcha.com/wp-content/uploads/2019/08/SeatoSummitLogo.png"
+                        alt="Everly"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-body">
+                    <h4>Sea to Summit</h4>
+                    <h3>
+                      Sea to Summit’s Ecommerce Site Traffic Climbs 189%, New Subscribers 820%
+                    </h3>
+                    <div class="results">
+                      <img
+                        src="https://cdn3.iconfinder.com/data/icons/glypho-free/64/cart-alt-512.png"
+                        alt="Cart icon"
+                      />
+                      <p>500% increase in traffic from social media</p>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <button>See Case Study</button>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-media">
+                    <figure>
+                      <img
+                        src="https://getmatcha.com/wp-content/uploads/2019/06/matt-and-margaret_headshot.png"
+                        alt="Everly worker"
+                      />
+                    </figure>
+                  </div>
+                  <div class="company">
+                    <figure>
+                      <img
+                        src="https://getmatcha.com/wp-content/uploads/2019/06/mambe-logo-1.png"
+                        alt="Everly"
+                      />
+                    </figure>
+                  </div>
+                  <div class="card-body">
+                    <h4>Mambe Waterproof Blankets</h4>
+                    <h3>
+                      How Mambe Increased Conversions by 327%, Reduced CPL by 60%
+                    </h3>
+                    <div class="results">
+                      <img
+                        src="https://cdn3.iconfinder.com/data/icons/glypho-free/64/cart-alt-512.png"
+                        alt="Cart icon"
+                      />
+                      <p>+327% more popup conversions at a 60% lower cost</p>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <button>See Case Study</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
           </div>
-          <div class="card-footer">
-            <button>See Case Study</button>
-          </div>
-        </div>
+        </section>
       </article>
     </section>
     <section class="how-does-it-work">
