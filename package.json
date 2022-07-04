@@ -1,7 +1,7 @@
 {
   "name": "santander-front-2022",
   "version": "1.0.0",
-  "description": "https://leafy-snickerdoodle-b64244.netlify.app/",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/rsanlazaro/santander-front-2022.git"
   },
   "keywords": [],
-  "author": "Rafael San Lazaro",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/rsanlazaro/santander-front-2022/issues"

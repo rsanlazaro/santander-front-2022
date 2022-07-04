@@ -1,0 +1,91 @@
+/** main.scss */
+@use "global" as *;
+
+.blog {
+  background-color: $white;
+  max-width: unset;
+  padding: 5% 10%;
+
+  .col {
+    margin: auto 40px;
+  }
+
+  .card {
+    height: max-content;
+  }
+
+  .title {
+    @extend %base-title;
+  }
+
+  .process-list {
+    margin-top: 40px;
+    margin-bottom: 50px;
+
+    .process {
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+
+      & > div {
+        & > h3 {
+          color: $dark-green-title;
+          margin-bottom: 0;
+          font-size: 30px;
+          font-weight: 500;
+        }
+        & > p {
+          color: $dark-green-text;
+          margin: 0;
+        }
+      }
+
+      .process-icon {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+        text-align: center;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  button {
+    height: auto;
+    border-radius: 8px;
+    padding: 12px;
+    width: 180px;
+    background-color: #025157;
+    color: #fff;
+    border: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog {
+    .row {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 2rem;
+      & > * {
+        width: unset;
+      }
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1199px) {
+  .item1 {
+    grid-area: blog-info;
+  }
+  .blog {
+    .row {
+      display: grid;
+      grid-template-areas: 'blog-info blog-info';
+      row-gap: 100px;     
+    }
+  }
+}
