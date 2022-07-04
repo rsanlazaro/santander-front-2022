@@ -7,7 +7,59 @@
   color: #135359;
 }
 
-/** main.scss */
+/** main.scss */ /** _global.scss */
+/** colores */
+/** fuentes */
+/** placeholders */
+.blog .title {
+  font-family: "Alegreya", serif;
+  color: #135359;
+}
+
+h2 {
+  font-family: "Alegreya", serif;
+  color: #025157;
+  font-weight: 800;
+  font-size: 51px;
+}
+
+.try-it {
+  padding: 50px;
+  background-color: #96d178;
+}
+.try-it .signup-form {
+  display: unset;
+}
+.try-it h2 {
+  margin-bottom: 40px;
+}
+.try-it p {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.container.cta {
+  margin: 2rem auto;
+  border-radius: 10px;
+  background-color: #135359;
+}
+.container.cta h2 {
+  color: #ffffff;
+  font-size: 34px;
+}
+.container.cta a {
+  color: #96d178;
+}
+.container.cta button {
+  background-color: #67b54b;
+}
+.container.cta p {
+  color: #ffffff;
+}
+.container.cta .box > * {
+  padding: 80px 100px;
+}
+
 .blog {
   background-color: #ffffff;
   max-width: unset;

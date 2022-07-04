@@ -1,0 +1,45 @@
+@use "global" as *;
+
+h2 {
+  font-family: $font-title;
+  color: $dark-green-title;
+  font-weight: 800;
+  font-size: 51px;
+}
+
+.try-it {
+    padding: 50px;
+    background-color: $light-green-2;
+  .signup-form {
+    display: unset;
+  }
+  h2 {
+    margin-bottom: 40px;
+  }
+  p {
+    margin-top: 20px;
+    color: $white;
+  }
+}
+
+.container.cta {
+    margin: 2rem auto;
+    border-radius: 10px;
+    background-color: $dark-green-text;
+    h2 {
+        color: $white;
+        font-size: 34px;
+    }
+    a {
+        color: $light-green-2;
+    }
+    button {
+        background-color: $light-green;
+    }
+    p {
+        color: $white;
+    }
+    .box > * {
+        padding: 80px 100px;
+    }
+}
