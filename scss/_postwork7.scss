@@ -42,4 +42,48 @@ h2 {
     .box > * {
         padding: 80px 100px;
     }
+    .signup-form {
+      margin-bottom: 20px;
+    }
+}
+
+@media (min-width: $telefono) and (max-width: $tablet) {
+  .container.cta {
+    .box > * {
+      &:first-of-type {
+        padding-bottom: 0px;
+      }
+      &:last-of-type {
+        padding-top: 0px;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet) and (max-width: $desktop) {
+  .container.cta {
+    .box > * {
+      &:first-of-type {
+        padding-right: 20px;
+        padding-left: 40px;
+      }
+      &:last-of-type {
+        padding-left: 20px;
+        padding-right: 40px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) and (max-width: $desktopXL) {
+  .container.cta {
+    .box > * {
+      &:first-of-type {
+        padding-right: 30px;
+      }
+      &:last-of-type {
+        padding-left: 30px;
+      }
+    }
+  }
 }

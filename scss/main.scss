@@ -65,6 +65,18 @@
   }
 }
 
+button {
+  background-color: $dark-green-title;
+  &:hover {
+    background-color: $light-green;
+  }
+  &.light-btn {
+    &:hover {
+      background-color: darken($dark-green-title,5%);
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .blog {
     .row {

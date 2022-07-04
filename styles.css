@@ -183,10 +183,10 @@ form > button {
 }
 
 form > div > button {
-  border: 1px solid #025157;
+  /* border: 1px solid #025157; */
   background-color: #025157;
   color: #fff;
-  /* border: none; */
+  border: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   padding: 10px;
@@ -567,7 +567,7 @@ li {
   background-color: #025157;
   padding-top: 8px;
   padding-bottom: 8px;
-  border: 1px solid #025157;
+  border: none;
 }
 
 .navbar-toggler:focus {
@@ -710,11 +710,20 @@ li {
     display: flex;
     flex-direction: column;
   }
+
+  .steps {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .class-step {
+    margin: 20px auto;
+  }
 }
 
 /** dispositivos pequeños en vista landscape (horizontal) */
 @media (min-width: 576px) and (max-width: 767px) {
-
   .menu li {
     margin: auto;
   }
@@ -842,11 +851,20 @@ li {
   .feature-image {
     display: none;
   }
+
+  .steps {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .class-step {
+    margin: 20px auto;
+  }
 }
 
 /** dispositivos medianos (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
-
   .menu li {
     margin: auto;
   }
@@ -958,6 +976,16 @@ li {
 
   .success-stories .overview img {
     margin: 30px auto;
+  }
+
+  .steps {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .class-step {
+    margin: 20px auto;
   }
 }
 

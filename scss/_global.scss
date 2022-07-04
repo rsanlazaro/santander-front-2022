@@ -12,6 +12,12 @@ $light-green-2: #96d178;
 /** fuentes */
 $font-title: "Alegreya", serif;
 
+/* Media queries */
+$telefono: 575px;
+$tablet: 767px;
+$desktop: 991px;
+$desktopXL: 1199px;
+
 /** placeholders */
 %base-title {
   font-family: $font-title;

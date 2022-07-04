@@ -1,6 +1,7 @@
 /** _global.scss */
 /** colores */
 /** fuentes */
+/* Media queries */
 /** placeholders */
 .blog .title {
   font-family: "Alegreya", serif;
@@ -10,6 +11,7 @@
 /** main.scss */ /** _global.scss */
 /** colores */
 /** fuentes */
+/* Media queries */
 /** placeholders */
 .blog .title {
   font-family: "Alegreya", serif;
@@ -59,7 +61,36 @@ h2 {
 .container.cta .box > * {
   padding: 80px 100px;
 }
+.container.cta .signup-form {
+  margin-bottom: 20px;
+}
 
+@media (min-width: 575px) and (max-width: 767px) {
+  .container.cta .box > *:first-of-type {
+    padding-bottom: 0px;
+  }
+  .container.cta .box > *:last-of-type {
+    padding-top: 0px;
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .container.cta .box > *:first-of-type {
+    padding-right: 20px;
+    padding-left: 40px;
+  }
+  .container.cta .box > *:last-of-type {
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  .container.cta .box > *:first-of-type {
+    padding-right: 30px;
+  }
+  .container.cta .box > *:last-of-type {
+    padding-left: 30px;
+  }
+}
 .blog {
   background-color: #ffffff;
   max-width: unset;
@@ -107,6 +138,16 @@ h2 {
   background-color: #025157;
   color: #fff;
   border: none;
+}
+
+button {
+  background-color: #025157;
+}
+button:hover {
+  background-color: #67b54b;
+}
+button.light-btn:hover {
+  background-color: #013a3e;
 }
 
 @media (max-width: 767px) {
